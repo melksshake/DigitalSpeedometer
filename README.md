@@ -4,7 +4,7 @@
 
 [<img src="./readmepics/app_screen_portrait.png" height="300"/>](./readmepics/app_screen_portrait.png)
 
-Project where speed values are generated in background in the Service (`SpeedValuesService`). Then values are sent to Activity (`MainActivity`), that has fullscreen custom digital speedometer view (`DigitalSpeedometerView`).
+Project, where speed values are generated in background in the Service (`SpeedValuesService`). Then values are sent to Activity (`MainActivity`), that has fullscreen custom digital speedometer view (`DigitalSpeedometerView`).
 While app is running, device screen won't turn of.
 
 This project shows using:
