@@ -15,18 +15,18 @@ In `SpeedValuesService` aidl interface `ISpeedValuesBinder`'s method ` registerC
 In `MainActivity` implemented `IOnSpeedChangedListener` that listens to speed values changes from service and shows it on view `binding.speedometerView.updateSpeed(newSpeed)`.
 
 2. Custom view, that is based on ConstraintLayout, as the digital speedometer.
-    `<com.melkonian.digitalspeedometer.DigitalSpeedometerView`
-        `android:id="@+id/speedometerView"`
-        `android:layout_width="0dp"`
-        `android:layout_height="0dp"`
-        `app:backgroundDrawable="@drawable/bg_speedometer_view"`
-        `app:layout_constraintBottom_toBottomOf="parent"`
-        `app:layout_constraintLeft_toLeftOf="parent"`
-        `app:layout_constraintRight_toRightOf="parent"`
-        `app:layout_constraintTop_toTopOf="parent"`
-        `app:speedTextColor="@android:color/holo_blue_light"`
-        `app:speedUnit="kmh"`
-        `app:unitTextColor="@android:color/holo_blue_light" />`
+    ```<com.melkonian.digitalspeedometer.DigitalSpeedometerView
+        android:id="@+id/speedometerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:backgroundDrawable="@drawable/bg_speedometer_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:speedTextColor="@android:color/holo_blue_light"
+        app:speedUnit="kmh"
+        app:unitTextColor="@android:color/holo_blue_light" />
 
 From `.xml` you can change some parameters:
 - `speedTextColor`
