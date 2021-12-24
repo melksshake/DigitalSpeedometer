@@ -11,6 +11,7 @@ Project consists of 2 modules:
 - app module with custom view;
 - data-source module with business logic.
 
+
 This project shows using:
 1. AIDL interfaces (Android Interface Definition Language) for interaction between `SpeedValuesService` and `MainActivity`, where service is generating speed values, based on time-dependent periodic function (sum of sinuses).
 
