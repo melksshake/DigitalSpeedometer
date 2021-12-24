@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewMainContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_speedometer_view">
+
+    <TextView
+        android:id="@+id/hundredsViewBg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/bg_speed_text_default"
+        android:textColor="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/dozensViewBg"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:textSize="170sp" />
+
+    <TextView
+        android:id="@+id/speedHundredsTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:maxLength="1"
+        android:shadowColor="@color/speed_value_color"
+        android:shadowRadius="@dimen/shadow_radius"
+        android:textColor="@color/speed_value_color"
+        app:layout_constraintBottom_toBottomOf="@id/hundredsViewBg"
+        app:layout_constraintEnd_toEndOf="@id/hundredsViewBg"
+        app:layout_constraintStart_toStartOf="@id/hundredsViewBg"
+        app:layout_constraintTop_toTopOf="@id/hundredsViewBg"
+        tools:text="1"
+        tools:textSize="170sp" />
+
+    <TextView
+        android:id="@+id/dozensViewBg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/bg_speed_text_default"
+        android:textColor="@color/gray"
+        app:layout_constraintBottom_toBottomOf="@id/hundredsViewBg"
+        app:layout_constraintEnd_toStartOf="@id/unitsViewBg"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/hundredsViewBg"
+        app:layout_constraintTop_toTopOf="@id/hundredsViewBg"
+        tools:textSize="170sp" />
+
+    <TextView
+        android:id="@+id/speedDozensTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:maxLength="1"
+        android:shadowColor="@color/speed_value_color"
+        android:shadowRadius="@dimen/shadow_radius"
+        android:textColor="@color/speed_value_color"
+        app:layout_constraintBottom_toBottomOf="@id/dozensViewBg"
+        app:layout_constraintEnd_toEndOf="@id/dozensViewBg"
+        app:layout_constraintStart_toStartOf="@id/dozensViewBg"
+        app:layout_constraintTop_toTopOf="@id/dozensViewBg"
+        tools:text="1"
+        tools:textSize="170sp" />
+
+    <TextView
+        android:id="@+id/unitsViewBg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/bg_speed_text_default"
+        android:textColor="@color/gray"
+        app:layout_constraintBottom_toBottomOf="@id/hundredsViewBg"
+        app:layout_constraintEnd_toStartOf="@id/speedUnitTextView"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/dozensViewBg"
+        app:layout_constraintTop_toTopOf="@id/hundredsViewBg"
+        tools:textSize="170sp" />
+
+    <TextView
+        android:id="@+id/speedUnitsTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:maxLength="1"
+        android:shadowColor="@color/speed_value_color"
+        android:shadowRadius="@dimen/shadow_radius"
+        android:textColor="@color/speed_value_color"
+        app:layout_constraintBottom_toBottomOf="@id/unitsViewBg"
+        app:layout_constraintEnd_toEndOf="@id/unitsViewBg"
+        app:layout_constraintStart_toStartOf="@id/unitsViewBg"
+        app:layout_constraintTop_toTopOf="@id/unitsViewBg"
+        tools:text="1"
+        tools:textSize="170sp" />
+
+    <TextView
+        android:id="@+id/speedUnitTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/speed_value_color"
+        android:shadowRadius="@dimen/shadow_radius"
+        android:textColor="@color/speed_value_color"
+        app:layout_constraintBottom_toBottomOf="@id/unitsViewBg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/unitsViewBg"
+        tools:text="@string/speed_unt_km_h"
+        tools:textSize="30sp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

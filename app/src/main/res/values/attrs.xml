@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DigitSpeedView">
+        <attr name="speedTextColor" format="color" />
+        <attr name="unitTextColor" format="color" />
+        <attr name="bgColor" format="color" />
+        <attr name="speedTextSize" format="dimension" />
+        <attr name="unitTextSize" format="dimension" />
+        <attr name="speedUnit" format="enum">
+            <enum name="kmh" value="0" />
+            <enum name="mph" value="1" />
+        </attr>
+        <attr name="speedValue" format="integer" />
+        <attr name="backgroundDrawable" format="integer" />
+        <attr name="disableBackgroundImage" format="boolean" />
+        <attr name="showUnit" format="boolean" />
+    </declare-styleable>
+</resources>

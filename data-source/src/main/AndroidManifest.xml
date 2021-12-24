@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.melkonian.datasource">
+
+    <permission
+        android:name="com.melkonian.datasource.permission.use_aidl_service"
+        android:protectionLevel="normal"
+        android:label="use_service"/>
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        tools:ignore="AllowBackup">
+
+        <service
+            android:name="com.melkonian.datasource.SpeedValuesService"
+            android:exported="true"
+            android:permission="com.melkonian.datasource.permission.use_aidl_service"
+            android:process=":datasource">
+            <intent-filter>
+                <action android:name="access_aidl_service" />
+            </intent-filter>
+        </service>
+
+    </application>
+</manifest>

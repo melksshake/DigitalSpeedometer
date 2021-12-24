@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DigitalSpeedometer</string>
+
+    <string name="speed_unt_km_h">km/h</string>
+    <string name="speed_unt_mph">mph</string>
+    <string name="bg_speed_text_default">8</string>
+</resources>
